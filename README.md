@@ -123,22 +123,18 @@ python -m src.agents.financerecon_agent 1001
 
 Allowance anomaly check:
 
-```powershell
-Invoke-RestMethod `
-  -Method Post `
-  -Uri http://127.0.0.1:8000/anomaly-check `
-  -ContentType "application/json" `
-  -Body '{"agreement_id":1001}'
+```curl
+curl -X POST http://127.0.0.1:8000/anomaly-check \
+  -H "Content-Type: application/json" \
+  -d '{"agreement_id":1001}'
 ```
 
 Finance reconciliation:
 
-```powershell
-Invoke-RestMethod `
-  -Method Post `
-  -Uri http://127.0.0.1:8000/finance-recon `
-  -ContentType "application/json" `
-  -Body '{"agreement_id":1001}'
+```curl
+curl -X POST http://127.0.0.1:8000/finance-recon \
+  -H "Content-Type: application/json" \
+  -d '{"agreement_id":1001}'
 ```
 
 ## Mock Data
