@@ -116,13 +116,11 @@ with gr.Blocks(title="Vendor Agreement Assistant") as demo:
         fn=respond,
         additional_inputs=[llm_provider, llm_model],
         examples=[
-            ["Check agreement id 1001 for allowance anomalies.", "groq", "llama-3.3-70b-versatile"],
-            ["Reconcile bill amounts for agreement id 1001.", "groq", "llama-3.3-70b-versatile"],
-            ["What is a vendor allowance agreement?", "groq", "llama-3.3-70b-versatile"],
-            ["Check agreement id 1002 for allowance anomalies.", "claude", "claude-opus-5"],
-            ["What is a vendor allowance agreement?", "claude", "claude-opus-5"],
-            ["Reconcile bill amounts for agreement id 1002", "claude", "claude-opus-5"],
+            ["Check agreement id 1001 for allowance anomalies.", "openai", "gpt-4o-mini"],
+            ["Reconcile bill amounts for agreement id 1001.", "openai", "gpt-4o-mini"],
+            ["Check agreement id 1002 for allowance anomalies.", "openai", "gpt-4o-mini"],
             ["Reconcile bill amounts for agreement id 1002.", "openai", "gpt-4o-mini"],
+            ["What is a vendor allowance agreement?", "openai", "gpt-4o-mini"],
         ],
     )
 

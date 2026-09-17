@@ -29,7 +29,7 @@ class Config(BaseSettings):
     CLAUDE_LLM_MODEL: str = "claude-opus-5"
     OPENAI_API_KEY: str = ""
     OPENAI_LLM_MODEL: str = "gpt-4o-mini"
-    DEFAULT_LLM_PROVIDER: str = "groq"  # "groq", "claude", or "openai"
+    DEFAULT_LLM_PROVIDER: str = "openai"  # "groq", "claude", or "openai"
 
 
 config = Config()

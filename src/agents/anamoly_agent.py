@@ -25,7 +25,7 @@ from src.tools.sales_history import get_item_level_sales_summary, get_total_sale
 
 logger = logging.getLogger(__name__)
 
-DEFAULT_MODEL = config.GROQ_LLM_MODEL
+DEFAULT_MODEL = config.OPENAI_LLM_MODEL
 
 SYSTEM_PROMPT = """\
 You are an anomaly-detection agent for vendor allowance agreements. Given an
