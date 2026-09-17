@@ -1,0 +1,20 @@
+[run]
+source =
+    src
+    mockup_db
+omit =
+    */__pycache__/*
+    src/ui/chatbotui.py
+    src/main.py
+    src/node/sample.py
+    mockup_db/mockup_data_load.py
+    mockup_db/export_to_csv.py
+
+[report]
+fail_under = 90
+show_missing = True
+skip_empty = True
+exclude_lines =
+    pragma: no cover
+    if __name__ == .__main__.:
+    logging.basicConfig

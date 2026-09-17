@@ -11,3 +11,5 @@ fastapi
 uvicorn[standard]
 truststore
 gradio
+pytest
+pytest-cov

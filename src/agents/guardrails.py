@@ -16,7 +16,7 @@ _PII_PATTERNS = {
     "email": re.compile(r"[\w.+-]+@[\w-]+\.[\w.-]+"),
     "ssn": re.compile(r"\b\d{3}-\d{2}-\d{4}\b"),
     "credit_card": re.compile(r"\b(?:\d[ -]?){13,16}\b"),
-    "phone_number": re.compile(r"\b(?:\+?\d{1,2}[ -]?)?(?:\(\d{3}\)|\d{3})[ -]?\d{3}[ -]?\d{4}\b"),
+    "phone_number": re.compile(r"(?<!\d)(?:\+?\d{1,2}[ -]?)?(?:\(\d{3}\)|\d{3})[ -]?\d{3}[ -]?\d{4}\b"),
     "ip_address": re.compile(r"\b(?:\d{1,3}\.){3}\d{1,3}\b"),
 }
 
