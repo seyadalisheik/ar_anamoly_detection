@@ -1,0 +1,13 @@
+langchain
+langchain-core
+langgraph
+langchain-groq
+langchain-anthropic
+langchain-openai
+openai
+python-dotenv
+pydantic-settings
+fastapi
+uvicorn[standard]
+truststore
+gradio

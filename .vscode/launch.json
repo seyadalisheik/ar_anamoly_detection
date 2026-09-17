@@ -1,0 +1,75 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {"name":"Python Debugger: FastAPI","type":"debugpy","request":"launch","module":"uvicorn","args":["src:app","--reload"],"jinja":true},
+        {
+            "name": "Python: FastAPI Server",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": [
+                "src.main:app",
+                "--reload",
+                "--host",
+                "127.0.0.1",
+                "--port",
+                "8000"
+            ],
+            "jinja": true,
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Python: Gradio Chat UI",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "src.ui.chatbotui",
+            "args": [],
+            "jinja": true,
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Python: Anomaly Agent",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "src.agents.anamoly_agent",
+            "args": [
+                "1001"
+            ],
+            "jinja": true,
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Python: Finance Reconciliation Agent",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "src.agents.financerecon_agent",
+            "args": [
+                "1001"
+            ],
+            "jinja": true,
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Python: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Python: Module",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "${command:pickModule}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
